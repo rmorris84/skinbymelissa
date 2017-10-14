@@ -1,18 +1,31 @@
 {
-  "name": "react-starter",
+  "name": "boilerplate-react",
   "version": "1.0.0",
-  "description": "Simple React/SASS/Webpack starter.",
-  "main": "index.js",
+  "description": "React Boilerplate",
+  "main": "server/index.js",
   "scripts": {
-    "dev": "webpack-dev-server --env.dev",
-    "production": "webpack -p --env.production"
+    "build": "NODE_ENV=production webpack -p --progress --config webpack.prod.config.js",
+    "dev": "webpack-dev-server --progress --hot --config webpack.dev.config.js",
+    "lint": "./scripts/lint",
+    "lint:fix": "./scripts/lint-fix",
+    "prod": "npm run build && npm run start",
+    "start": "nodemon server/index.js",
+    "test": "./scripts/test",
+    "test:verbose": "./scripts/test-verbose"
   },
-  "author": "Robert Morris",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmorris84/react-starter.git"
+  },
+  "author": {
+    "name": "Robert Morris",
+    "email": "rmorris84@gmail.com",
+    "url": "https://github.com/rmorris84"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rmorris84/react-starter/issues"
   },
-  "homepage": "https://github.com/rmorris84/react-starter#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "code": "^4.1.0",
