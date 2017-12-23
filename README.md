@@ -4,6 +4,10 @@ Skin by Melissa
 
 ## Quick Start
 
+Simple one page app made with React and WebPack.
+
+Live Site: [Launch](www.skinbymelissa.com)
+
 #### for Development
 
 ```
@@ -11,19 +15,8 @@ npm install
 npm run dev
 ```
 
-#### for Production
+#### Build
 
 ```
-npm run prod
-```
-
-#### Other Commands
-
-```
-npm start
-npm test
 npm run build
-npm run test:verbose
-npm run lint
-npm run lint:fix
 ```
