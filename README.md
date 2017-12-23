@@ -6,7 +6,7 @@ Skin by Melissa
 
 Simple one page app made with React and WebPack.
 
-Live Site: [Launch](www.skinbymelissa.com)
+Live Site: [Launch](http://www.skinbymelissa.com)
 
 #### for Development
 
